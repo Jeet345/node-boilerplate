@@ -1,0 +1,6 @@
+[submodule "src/schema"]
+	path = src/schema
+	url = git@bitbucket.org:dev-work-space/server-schema.git
+[submodule "src/shared-lib"]
+	path = src/shared-lib
+	url = git@bitbucket.org:dev-work-space/server-shared-lib.git

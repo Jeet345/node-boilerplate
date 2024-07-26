@@ -1,0 +1,23 @@
+variables:
+  BITBUCKET_REPO_URL: https://$BITBUCKET_CLOUD_USERNAME:$BITBUCKET_CLOUD_PASSWORD@bitbucket.org/dev-work-space/server-shared-lib.git
+
+sync_gitlab_to_bitbucket:
+  script:
+    - git checkout "$CI_COMMIT_BRANCH"
+    - git pull
+    - git remote set-url origin $BITBUCKET_REPO_URL
+    - git push origin "$CI_COMMIT_BRANCH"
+  except:
+    - master
+    - main
+
+sync_gitlab_to_bitbucket_prod:
+  when: manual
+  script:
+    - git checkout "$CI_COMMIT_BRANCH"
+    - git pull
+    - git remote set-url origin $BITBUCKET_REPO_URL
+    - git push origin "$CI_COMMIT_BRANCH"
+  only:
+    - master
+    - main

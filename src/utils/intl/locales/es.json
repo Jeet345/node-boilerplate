@@ -1,0 +1,23 @@
+{
+	"REPLACEMENT_TEST": "HOLA {{name}}",
+	"INTERNAL_SERVER_ERROR": "Algo salió mal. Por favor, inténtelo de nuevo más tarde.",
+	"RATE_LIMIT": "¡Demasiados intentos. Por favor pruebe mas tarde!",
+	"USER_NOT_FOUND": "¡Usuario no encontrado!",
+	"INVALID_TOKEN": "¡Simbolo no valido!",
+	"NOT_LOGGEDIN": "¡Por favor Iniciar sesión!",
+	"SESSION_EXPIRED": "Su sesión ha caducado. ¡Inicia sesión de nuevo!",
+	"USER_UPDATE_SUCCESS": "¡Perfil actualizado con éxito!",
+	"USER_IS_DEACTIVATED": "¡Tu cuenta está inactiva!",
+	"USER_PASSWORD_UPDATED": "¡Contraseña actualizada exitosamente!",
+	"POST_CREATE_SUCCESS": "¡Publicación creada con éxito!",
+	"POST_NOT_FOUND": "¡Publicación no encontrada!",
+	"UNAUTHORIZED": "No autorizado",
+	"LOGIN_SUCCESSFULLY": "¡Iniciado sesión correctamente!",
+	"MISSING_REQUIRED_FIELDS": "Faltan campos obligatorios",
+	"EMAIL_ALREADY_EXIST": "¡Correo electrónico ya registrado!",
+	"ACCOUNT_CREATED_PLEASE_LOGIN": "Cuenta creada con éxito, por favor inicie sesión!",
+	"EMAIL_DOES_NOT_EXIST": "El correo electrónico no existe, por favor regístrese!",
+	"INVALID_CREDENTIALS": "¡El correo electrónico o la contraseña proporcionados son incorrectos!",
+	"RESET_PASSWORD_LINK_SENT_SUCCESSFUL": "¡El enlace para restablecer la contraseña ha sido enviado a su correo electrónico!",
+	"RESET_PASSWORD_LINK_EXPIRED": "¡Tu enlace de restablecimiento de contraseña ha caducado!"
+}

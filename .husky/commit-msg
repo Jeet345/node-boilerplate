@@ -1,0 +1,19 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+commit_message="$(cat "$1")"
+required_pattern="^.*\s-\s#[a-zA-Z0-9-]+$"
+commit_prefix_pattern="^\s*(version|submodule|merge).*"
+
+if echo "$commit_message" | grep -E -qi "$commit_prefix_pattern"; then
+  exit 0
+elif test "$(echo "$commit_message" | grep -E -q "$required_pattern"; echo $?)" -eq 0; then
+  exit 0
+else
+  echo "-"
+  echo "-"
+  echo "-"
+  echo "🚨 Wrong commit message! 😕"
+  echo "Your commit message was: $commit_message"
+  exit 1
+fi
